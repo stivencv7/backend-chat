@@ -7,10 +7,12 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.evc.websocket.app.websocket.models.Message;
 // import com.evc.websocket.app.websocket.models.MessageDTO;
 
+@CrossOrigin(origins={"*"})
 @Controller
 public class WebsocketController {
 
